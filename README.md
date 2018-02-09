@@ -128,5 +128,5 @@ self.imageView.image = UIImage(named: "dropdown_loading_01@2x.png")
 }
 ```
 
-> `ScrollRefresh`是根据oc版的`MJRefresh`实现的swift基础版的下拉刷新控件:,详情请点击：[Demo地址](https://github.com/guiqiang107/ScrollRefresh)
+> `ScrollRefresh`是根据oc版的`MJRefresh`实现的swift基础版的下拉刷新控件:,详情请点击：[简书地址](https://www.jianshu.com/p/3ae4b03d9c1c)
 
