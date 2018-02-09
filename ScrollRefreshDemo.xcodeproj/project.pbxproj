@@ -14,6 +14,16 @@
 		268A033620299E4600138224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268A033420299E4600138224 /* LaunchScreen.storyboard */; };
 		268A034120299E4600138224 /* ScrollRefreshDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A034020299E4600138224 /* ScrollRefreshDemoTests.swift */; };
 		268A034C20299E4600138224 /* ScrollRefreshDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A034B20299E4600138224 /* ScrollRefreshDemoUITests.swift */; };
+		268A03A320299E5E00138224 /* RefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A035A20299E5D00138224 /* RefreshNormalHeader.swift */; };
+		268A03A420299E5E00138224 /* RefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A035B20299E5D00138224 /* RefreshHeader.swift */; };
+		268A03A520299E5E00138224 /* RefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A035C20299E5D00138224 /* RefreshFooter.swift */; };
+		268A03A620299E5E00138224 /* RefreshGifHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A035D20299E5D00138224 /* RefreshGifHeader.swift */; };
+		268A03A720299E5E00138224 /* RefreshNormalFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A035E20299E5D00138224 /* RefreshNormalFooter.swift */; };
+		268A03A820299E5E00138224 /* RefreshConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A035F20299E5D00138224 /* RefreshConst.swift */; };
+		268A03A920299E5E00138224 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A036020299E5D00138224 /* UIScrollViewExtension.swift */; };
+		268A03EA20299E5E00138224 /* RefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A03A220299E5D00138224 /* RefreshComponent.swift */; };
+		268A03EC20299EA500138224 /* UIVIewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A03EB20299EA500138224 /* UIVIewExtension.swift */; };
+		26F49459202D817000514C79 /* arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 26F49458202D817000514C79 /* arrow@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +57,16 @@
 		268A034720299E4600138224 /* ScrollRefreshDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollRefreshDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		268A034B20299E4600138224 /* ScrollRefreshDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollRefreshDemoUITests.swift; sourceTree = "<group>"; };
 		268A034D20299E4600138224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		268A035A20299E5D00138224 /* RefreshNormalHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshNormalHeader.swift; sourceTree = "<group>"; };
+		268A035B20299E5D00138224 /* RefreshHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshHeader.swift; sourceTree = "<group>"; };
+		268A035C20299E5D00138224 /* RefreshFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshFooter.swift; sourceTree = "<group>"; };
+		268A035D20299E5D00138224 /* RefreshGifHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshGifHeader.swift; sourceTree = "<group>"; };
+		268A035E20299E5D00138224 /* RefreshNormalFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshNormalFooter.swift; sourceTree = "<group>"; };
+		268A035F20299E5D00138224 /* RefreshConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshConst.swift; sourceTree = "<group>"; };
+		268A036020299E5D00138224 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		268A03A220299E5D00138224 /* RefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshComponent.swift; sourceTree = "<group>"; };
+		268A03EB20299EA500138224 /* UIVIewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVIewExtension.swift; sourceTree = "<group>"; };
+		26F49458202D817000514C79 /* arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +97,7 @@
 		268A031F20299E4600138224 = {
 			isa = PBXGroup;
 			children = (
+				268A035920299E5D00138224 /* ScrollViewRefresh */,
 				268A032A20299E4600138224 /* ScrollRefreshDemo */,
 				268A033F20299E4600138224 /* ScrollRefreshDemoTests */,
 				268A034A20299E4600138224 /* ScrollRefreshDemoUITests */,
@@ -98,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				268A032B20299E4600138224 /* AppDelegate.swift */,
+				268A035D20299E5D00138224 /* RefreshGifHeader.swift */,
 				268A032D20299E4600138224 /* ViewController.swift */,
 				268A032F20299E4600138224 /* Main.storyboard */,
 				268A033220299E4600138224 /* Assets.xcassets */,
@@ -123,6 +145,30 @@
 				268A034D20299E4600138224 /* Info.plist */,
 			);
 			path = ScrollRefreshDemoUITests;
+			sourceTree = "<group>";
+		};
+		268A035920299E5D00138224 /* ScrollViewRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				26F49457202D817000514C79 /* Resource */,
+				268A03A220299E5D00138224 /* RefreshComponent.swift */,
+				268A035A20299E5D00138224 /* RefreshNormalHeader.swift */,
+				268A035B20299E5D00138224 /* RefreshHeader.swift */,
+				268A035C20299E5D00138224 /* RefreshFooter.swift */,
+				268A035E20299E5D00138224 /* RefreshNormalFooter.swift */,
+				268A035F20299E5D00138224 /* RefreshConst.swift */,
+				268A036020299E5D00138224 /* UIScrollViewExtension.swift */,
+				268A03EB20299EA500138224 /* UIVIewExtension.swift */,
+			);
+			path = ScrollViewRefresh;
+			sourceTree = "<group>";
+		};
+		26F49457202D817000514C79 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				26F49458202D817000514C79 /* arrow@2x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26F49459202D817000514C79 /* arrow@2x.png in Resources */,
 				268A033620299E4600138224 /* LaunchScreen.storyboard in Resources */,
 				268A033320299E4600138224 /* Assets.xcassets in Resources */,
 				268A033120299E4600138224 /* Main.storyboard in Resources */,
@@ -259,8 +306,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268A03EC20299EA500138224 /* UIVIewExtension.swift in Sources */,
+				268A03A520299E5E00138224 /* RefreshFooter.swift in Sources */,
+				268A03EA20299E5E00138224 /* RefreshComponent.swift in Sources */,
+				268A03A620299E5E00138224 /* RefreshGifHeader.swift in Sources */,
+				268A03A920299E5E00138224 /* UIScrollViewExtension.swift in Sources */,
+				268A03A720299E5E00138224 /* RefreshNormalFooter.swift in Sources */,
+				268A03A820299E5E00138224 /* RefreshConst.swift in Sources */,
 				268A032E20299E4600138224 /* ViewController.swift in Sources */,
 				268A032C20299E4600138224 /* AppDelegate.swift in Sources */,
+				268A03A420299E5E00138224 /* RefreshHeader.swift in Sources */,
+				268A03A320299E5E00138224 /* RefreshNormalHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +485,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUMV3YM53U;
 				INFOPLIST_FILE = ScrollRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyku.ScrollRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,6 +501,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XUMV3YM53U;
 				INFOPLIST_FILE = ScrollRefreshDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyku.ScrollRefreshDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
