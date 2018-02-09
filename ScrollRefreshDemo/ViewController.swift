@@ -16,7 +16,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       print(self.view.bounds.height)
+
         self.title = "下拉刷新"
         self.tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height - 64), style: .plain)
         self.view.addSubview(self.tableView)
@@ -26,15 +26,21 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         
         //普通下拉刷新
 //        self.tableView.refreshHeader = RefreshNormalHeader.headerWithRefreshingBlock {
+//              定义刷新事件
 //            self.headerRefresh()
 //        }
         
         //自定义自己的gif刷新
         self.tableView.refreshHeader = RefreshGifHeader.headerWithRefreshingBlock {
+            
+            // 定义刷新事件
             self.headerRefresh()
         }
 
+        //普通上拉加载
         self.tableView.refreshFooter = RefreshNormalFooter.footerWithRefreshingBlock {
+            
+            // 定义加载事件
             self.footerRefresh()
         }
         

@@ -97,7 +97,7 @@
 		268A031F20299E4600138224 = {
 			isa = PBXGroup;
 			children = (
-				268A035920299E5D00138224 /* ScrollViewRefresh */,
+				268A035920299E5D00138224 /* ScrollRefresh */,
 				268A032A20299E4600138224 /* ScrollRefreshDemo */,
 				268A033F20299E4600138224 /* ScrollRefreshDemoTests */,
 				268A034A20299E4600138224 /* ScrollRefreshDemoUITests */,
@@ -147,7 +147,7 @@
 			path = ScrollRefreshDemoUITests;
 			sourceTree = "<group>";
 		};
-		268A035920299E5D00138224 /* ScrollViewRefresh */ = {
+		268A035920299E5D00138224 /* ScrollRefresh */ = {
 			isa = PBXGroup;
 			children = (
 				26F49457202D817000514C79 /* Resource */,
@@ -160,7 +160,7 @@
 				268A036020299E5D00138224 /* UIScrollViewExtension.swift */,
 				268A03EB20299EA500138224 /* UIVIewExtension.swift */,
 			);
-			path = ScrollViewRefresh;
+			path = ScrollRefresh;
 			sourceTree = "<group>";
 		};
 		26F49457202D817000514C79 /* Resource */ = {
