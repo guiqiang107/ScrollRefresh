@@ -16,12 +16,13 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        self.tableView = UITableView.init(frame: self.view.bounds, style: .plain)
+       print(self.view.bounds.height)
+        self.title = "下拉刷新"
+        self.tableView = UITableView.init(frame: CGRect.init(x: 0, y: 0, width: self.view.bounds.width, height: self.view.bounds.height - 64), style: .plain)
         self.view.addSubview(self.tableView)
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        self.tableView.backgroundColor = UIColor.orange
+        self.tableView.backgroundColor = UIColor.init(white: 0.9, alpha: 1)
         
         //普通下拉刷新
 //        self.tableView.refreshHeader = RefreshNormalHeader.headerWithRefreshingBlock {
@@ -48,7 +49,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         self.tableView.refreshHeader?.endRefreshing()
         
         self.models.removeAll()
-        self.models = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+        self.models = [1,2,3,4,5,6,7]
         self.tableView.reloadData()
     }
     
@@ -78,7 +79,6 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
             cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         }
         cell?.textLabel?.text = "\(models[(indexPath as NSIndexPath).row])"
-        cell?.backgroundColor = UIColor.lightGray
         return cell!
     }
     
